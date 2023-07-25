@@ -1,0 +1,8 @@
+h1 {
+    text-align: center;
+}
+.navContainer {
+    display:flex;
+    gap: 2em;
+    justify-content: center;
+}
