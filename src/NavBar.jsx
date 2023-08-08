@@ -1,24 +1,20 @@
-import './NavBar.css'
+import "./NavBar.css";
 import { Link } from "react-router-dom";
 
-function NavBar() {
+export default function NavBar() {
   return (
-    <>
-        <h1>Suazo Shopping</h1>
-        <div className="navContainer">
-            <button type="button">
-            <Link to="home">
-                Home
-              </Link>
-            </button>
-            <button type="button">
-              <Link to="shop">
-                Shop
-              </Link>
-            </button>
-        </div>
-    </>
-  )
+    <nav className="nav">
+      <Link to="/" className="site-title">
+        Suazo Shop
+      </Link>
+      <ul>
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/shop">Shop</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
-
-export default NavBar

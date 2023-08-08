@@ -1,27 +1,39 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
-import HomePage from './HomePage.jsx';
-import ShopPage from './ShopPage.jsx';
-import ErrorPage from "./ErrorPage";
+import HomePage from "./pages/HomePage.jsx";
+import ShopPage from "./pages/ShopPage.jsx";
+import ErrorPage from "./pages/ErrorPage";
+import NavBar from "./NavBar";
 
 const Router = () => {
-    const router = createBrowserRouter([
-      {
-        path: "/",
-        element: <App />,
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: "/shop",
-        element: <ShopPage />,
-      },
-      {
-        path: "/home",
-        element: <HomePage />,
-      },
-    ]);
-  
-    return <RouterProvider router={router} />;
-  };
-  
-  export default Router;
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <>
+          <NavBar /> <HomePage />
+        </>
+      ),
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/home",
+      element: (
+        <>
+          <NavBar /> <HomePage />
+        </>
+      ),
+    },
+    {
+      path: "/shop",
+      element: (
+        <>
+          <NavBar /> <ShopPage />
+        </>
+      ),
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
+};
+
+export default Router;

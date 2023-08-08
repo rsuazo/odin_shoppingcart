@@ -1,13 +1,12 @@
-import NavBar from './NavBar';
+import NavBar from "./NavBar";
 
-function App() {
+export default function App() {
+  let Component;
+
   return (
     <>
-      <div>
-        <NavBar />
-      </div>
+      <NavBar />
+      <Component />
     </>
-  )
+  );
 }
-
-export default App
