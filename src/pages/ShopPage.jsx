@@ -7,15 +7,7 @@ function ShopPage() {
       <div className="shop_container">
         <h1>Shop Home</h1>
         <div className="product_card_container">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard link />
         </div>
       </div>
     </>
