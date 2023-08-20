@@ -1,8 +1,11 @@
 import CartButton from "./components/CartButton";
 import "./styles/NavBar.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function NavBar() {
+  const [count, setCount] = useState(0);
+
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
@@ -17,12 +20,7 @@ export default function NavBar() {
         </li>
         <li>
           <Link to="/shop">
-            <img
-              className="filter-white"
-              src="src/assets/images/cart.svg"
-              height="22"
-              width="22"
-            ></img>
+            <CartButton count={count} />
           </Link>
         </li>
       </ul>
