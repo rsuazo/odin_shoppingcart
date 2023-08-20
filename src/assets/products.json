@@ -1,0 +1,19 @@
+{
+  "wands": [
+    {
+      "name": "Harry Potter",
+      "price": "$19.99",
+      "imagePath": "src/assets/images/harry.webp"
+    },
+    {
+      "name": "Hermione Granger",
+      "price": "$29.99",
+      "imagePath": "src/assets/images/hermione.webp"
+    },
+    {
+      "name": "Ron Weasley",
+      "price": "$39.99",
+      "imagePath": "src/assets/images/ron.webp"
+    }
+  ]
+}

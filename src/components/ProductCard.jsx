@@ -1,15 +1,11 @@
-import goldensnitch from "../assets/images/goldensnitch.webp";
-
-export default function ProductCard(props) {
+export default function ProductCard({ imageLink, name, price, description }) {
   return (
-    <>
-      <div className="product">
-        <img src={goldensnitch}></img>
-        <h1>Product Card</h1>
-        <p className="productPrice">$19.99</p>
-        <p>This is our best wand!</p>
-        <button>Add to Cart</button>
-      </div>
-    </>
+    <div className="product">
+      <img src={imageLink}></img>
+      <h1>{name}</h1>
+      <p className="productPrice">{price}</p>
+      <p>{description}</p>
+      <button>Add to Cart</button>
+    </div>
   );
 }
