@@ -1,5 +1,5 @@
 .shop_container {
-  /* background-color: #5d5a5a; */
+  background-color: #fcf5e7;
   min-height: 100vh;
 }
 
@@ -22,6 +22,10 @@ h1 {
 }
 
 .product {
+  background-image: url("src/assets/images/product-background.png");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
