@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        Suazo Shop
+        Wand Shop
       </Link>
       <ul>
         <li>
