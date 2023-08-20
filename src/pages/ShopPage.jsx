@@ -1,6 +1,6 @@
 import "../styles/ShopPage.css";
 import ProductCard from "../components/ProductCard";
-import data from "../assets/products.json";
+import data from "../assets/products";
 
 export default function ShopPage() {
   return (
@@ -10,6 +10,8 @@ export default function ShopPage() {
         {data.map(function (product) {
           return (
             <ProductCard
+              key={product.id}
+              id={product.id}
               imageLink={product.imagePath}
               name={product.name}
               price={product.price}

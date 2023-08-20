@@ -1,6 +1,12 @@
-export default function ProductCard({ imageLink, name, price, description }) {
+export default function ProductCard({
+  id,
+  imageLink,
+  name,
+  price,
+  description,
+}) {
   return (
-    <div className="product">
+    <div className="product" id={id}>
       <img src={imageLink}></img>
       <h1>{name}</h1>
       <p className="productPrice">{price}</p>
